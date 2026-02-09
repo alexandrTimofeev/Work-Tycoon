@@ -1,0 +1,294 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 774f80d0a36a6174dab514304495ccbd, type: 3}
+  m_Name: GameGlobalData
+  m_EditorClassIdentifier: 
+  data:
+    RocksContainer:
+      Title: Rock
+      _value: 2
+      _clampRange: {x: 0, y: 2147483647}
+    MoneyContainer:
+      Title: Money
+      _value: 0
+      _clampRange: {x: 0, y: 2147483647}
+    TetraObjectDatas:
+    - ID: rockUp
+      Prefab: {fileID: 9215551846425415050, guid: 2e743d6cb07e36e48a0784beeadfe1c0, type: 3}
+      InfoOverData:
+        ID: Rock
+        Name: Rock
+        Description: 
+      Icon: {fileID: 21300000, guid: a1a1dc01f1aefb644b328792baa6b782, type: 3}
+      IconColor: {r: 0.6666667, g: 0.4392157, b: 0.4392157, a: 1}
+      Name: Quarry
+      Condition:
+        costRock: 2
+        costMoney: 0
+      ConditionUnlock:
+        costRock: 0
+        costMoney: 0
+      ConditionUpgrade:
+        costRock: 0
+        costMoney: 4
+    - ID: moneyUp
+      Prefab: {fileID: 7227696327342680487, guid: 26ff2632c4802ca4d83aced72cff24e2, type: 3}
+      InfoOverData:
+        ID: 
+        Name: 
+        Description: 
+      Icon: {fileID: 21300000, guid: f0450d48be91c444584fc06b27c5cbcc, type: 3}
+      IconColor: {r: 1, g: 0.98039216, b: 0, a: 1}
+      Name: Diamond ore
+      Condition:
+        costRock: 4
+        costMoney: 0
+      ConditionUnlock:
+        costRock: 0
+        costMoney: 0
+      ConditionUpgrade:
+        costRock: 0
+        costMoney: 2
+    - ID: RockPowerUp
+      Prefab: {fileID: 8694228070172753712, guid: df52e5887572bfd4ca3328c132152ab4, type: 3}
+      InfoOverData:
+        ID: 
+        Name: 
+        Description: 
+      Icon: {fileID: 21300000, guid: d4fc0facf1772fc409cc16eb6c5e1bc8, type: 3}
+      IconColor: {r: 0, g: 0.5686275, b: 1, a: 1}
+      Name: Mining barracks
+      Condition:
+        costRock: 15
+        costMoney: 0
+      ConditionUnlock:
+        costRock: 0
+        costMoney: 50
+      ConditionUpgrade:
+        costRock: 0
+        costMoney: 20
+    - ID: MoneyPowerUp
+      Prefab: {fileID: 5919635078791722901, guid: 4cdf889d67aae5348b38e2aacb68ea6b, type: 3}
+      InfoOverData:
+        ID: 
+        Name: 
+        Description: 
+      Icon: {fileID: 21300000, guid: 82529c3a895d20c419db4f8f994463cd, type: 3}
+      IconColor: {r: 0, g: 0.5686275, b: 1, a: 1}
+      Name: Miners'  brracks
+      Condition:
+        costRock: 20
+        costMoney: 0
+      ConditionUnlock:
+        costRock: 0
+        costMoney: 100
+      ConditionUpgrade:
+        costRock: 0
+        costMoney: 20
+    - ID: MinusAll
+      Prefab: {fileID: 3365610292966920026, guid: 3d62b09300c8f6e4db0e90f589504c54, type: 3}
+      InfoOverData:
+        ID: 
+        Name: 
+        Description: 
+      Icon: {fileID: 21300000, guid: 9c820bd05f4b6dc4caee8794961142c3, type: 3}
+      IconColor: {r: 0.16862746, g: 0.16862746, b: 0.16862746, a: 1}
+      Name: Factory
+      Condition:
+        costRock: 200
+        costMoney: 0
+      ConditionUnlock:
+        costRock: 0
+        costMoney: 1000
+      ConditionUpgrade:
+        costRock: 0
+        costMoney: 50
+    - ID: SpeedUp
+      Prefab: {fileID: 8454867377829475606, guid: a933acb91196ba141884fe16990fc32f, type: 3}
+      InfoOverData:
+        ID: 
+        Name: 
+        Description: 
+      Icon: {fileID: 21300000, guid: 5b7e0702032789e4e9aac23e78e2a5a8, type: 3}
+      IconColor: {r: 0, g: 1, b: 0.9843137, a: 1}
+      Name: Clock Tower
+      Condition:
+        costRock: 1000
+        costMoney: 0
+      ConditionUnlock:
+        costRock: 0
+        costMoney: 5000
+      ConditionUpgrade:
+        costRock: 0
+        costMoney: 90
+    - ID: slowAndPowerUp
+      Prefab: {fileID: 800389420786454907, guid: a640d05c5a0c23b42a3db4f97843c69f, type: 3}
+      InfoOverData:
+        ID: 
+        Name: 
+        Description: 
+      Icon: {fileID: 21300000, guid: 2647170c0abeeaf46b8e5f2058d463e3, type: 3}
+      IconColor: {r: 0, g: 1, b: 0.9843137, a: 1}
+      Name: Hospital
+      Condition:
+        costRock: 2000
+        costMoney: 0
+      ConditionUnlock:
+        costRock: 0
+        costMoney: 10000
+      ConditionUpgrade:
+        costRock: 0
+        costMoney: 75
+    - ID: upLeftGood
+      Prefab: {fileID: 8917508208746687307, guid: 64857a450d4748848b992503099bcdce, type: 3}
+      InfoOverData:
+        ID: 
+        Name: 
+        Description: 
+      Icon: {fileID: 21300000, guid: 0ed276911e622384ba5f388f341f71b0, type: 3}
+      IconColor: {r: 1, g: 0.8901961, b: 0, a: 1}
+      Name: Solar Panels Up
+      Condition:
+        costRock: 1200
+        costMoney: 0
+      ConditionUnlock:
+        costRock: 0
+        costMoney: 20000
+      ConditionUpgrade:
+        costRock: 0
+        costMoney: 50
+    - ID: downRightGood
+      Prefab: {fileID: 624902843511334636, guid: 6d26d7fbae499794398644e0e63ef46d, type: 3}
+      InfoOverData:
+        ID: 
+        Name: 
+        Description: 
+      Icon: {fileID: 21300000, guid: 896d711c697bef346a040d5ff9c1aef4, type: 3}
+      IconColor: {r: 1, g: 0.90588236, b: 0, a: 1}
+      Name: Solar Panels Down
+      Condition:
+        costRock: 1200
+        costMoney: 0
+      ConditionUnlock:
+        costRock: 0
+        costMoney: 20000
+      ConditionUpgrade:
+        costRock: 0
+        costMoney: 50
+    - ID: RockForMoney
+      Prefab: {fileID: 5325672288375666736, guid: b22d114ae172b0249a3f5ce4bef2c2ab, type: 3}
+      InfoOverData:
+        ID: 
+        Name: 
+        Description: 
+      Icon: {fileID: 21300000, guid: 0e760844fd68df941aaa15e720527071, type: 3}
+      IconColor: {r: 0.7137255, g: 0.7137255, b: 0.7137255, a: 1}
+      Name: The Stone Market
+      Condition:
+        costRock: 2200
+        costMoney: 0
+      ConditionUnlock:
+        costRock: 0
+        costMoney: 50000
+      ConditionUpgrade:
+        costRock: 0
+        costMoney: 250
+    - ID: MoneyForRock
+      Prefab: {fileID: 6280391225087120877, guid: d7aa0022e661f9842bc64736c4deb019, type: 3}
+      InfoOverData:
+        ID: 
+        Name: 
+        Description: 
+      Icon: {fileID: 21300000, guid: 0e760844fd68df941aaa15e720527071, type: 3}
+      IconColor: {r: 0.16078432, g: 0.7294118, b: 0, a: 1}
+      Name: Market
+      Condition:
+        costRock: 2500
+        costMoney: 0
+      ConditionUnlock:
+        costRock: 0
+        costMoney: 100000
+      ConditionUpgrade:
+        costRock: 0
+        costMoney: 300
+    - ID: ForNeiberRock
+      Prefab: {fileID: 1383641644487641862, guid: f8b9ad62db486a74bb3a615fdf28c633, type: 3}
+      InfoOverData:
+        ID: 
+        Name: 
+        Description: 
+      Icon: {fileID: 21300000, guid: cc85561e633b0f741be39cda62c016e6, type: 3}
+      IconColor: {r: 0.54509807, g: 0.76862746, b: 0.8352941, a: 1}
+      Name: Technical District
+      Condition:
+        costRock: 5000
+        costMoney: 0
+      ConditionUnlock:
+        costRock: 0
+        costMoney: 150000
+      ConditionUpgrade:
+        costRock: 0
+        costMoney: 500
+    - ID: ForNeiber
+      Prefab: {fileID: 8572058512232800055, guid: d20328b4dbea79647bdcc4cabc54d575, type: 3}
+      InfoOverData:
+        ID: 
+        Name: 
+        Description: 
+      Icon: {fileID: 21300000, guid: 51857a42e5544c54caccaca7b1b743ac, type: 3}
+      IconColor: {r: 0, g: 0.78039217, b: 0.09411765, a: 1}
+      Name: Residential Area
+      Condition:
+        costRock: 6000
+        costMoney: 0
+      ConditionUnlock:
+        costRock: 0
+        costMoney: 300000
+      ConditionUpgrade:
+        costRock: 0
+        costMoney: 500
+    - ID: Invokev
+      Prefab: {fileID: 7064686732773345641, guid: 1e18bd8ecfae9dc4b9316b75f04eae37, type: 3}
+      InfoOverData:
+        ID: 
+        Name: 
+        Description: 
+      Icon: {fileID: 21300000, guid: d3bfd50179e07554095fc5523326c21e, type: 3}
+      IconColor: {r: 0.28235295, g: 0.23529412, b: 0.23529412, a: 1}
+      Name: Stone Warehouse
+      Condition:
+        costRock: 10000
+        costMoney: 0
+      ConditionUnlock:
+        costRock: 0
+        costMoney: 500000
+      ConditionUpgrade:
+        costRock: 0
+        costMoney: 100
+    - ID: InvokevMoney
+      Prefab: {fileID: 5269471281678765652, guid: 75141734feee3ba4aa240f3d48d6a1d7, type: 3}
+      InfoOverData:
+        ID: 
+        Name: 
+        Description: 
+      Icon: {fileID: 21300000, guid: d3bfd50179e07554095fc5523326c21e, type: 3}
+      IconColor: {r: 0, g: 1, b: 0.44313726, a: 1}
+      Name: Diamond Warehouse
+      Condition:
+        costRock: 10000
+        costMoney: 0
+      ConditionUnlock:
+        costRock: 0
+        costMoney: 1000000
+      ConditionUpgrade:
+        costRock: 0
+        costMoney: 100

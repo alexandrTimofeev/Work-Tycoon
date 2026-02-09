@@ -69,8 +69,8 @@ platform :ios do
       )     
 
       build_app(
-        workspace: "#{ENV['IOS_BUILD_PATH']}/iOS/Unity-iPhone.xcworkspace",
-        #project: "#{ENV['IOS_BUILD_PATH']}/iOS/Unity-iPhone.xcodeproj",
+        #workspace: "#{ENV['IOS_BUILD_PATH']}/iOS/Unity-iPhone.xcworkspace",
+        project: "#{ENV['IOS_BUILD_PATH']}/iOS/Unity-iPhone.xcodeproj",
         scheme: ENV["XC_TARGET_NAME"],
         xcargs: "-allowProvisioningUpdates IPHONEOS_DEPLOYMENT_TARGET=16.0",
         export_team_id: team_id,

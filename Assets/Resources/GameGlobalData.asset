@@ -15,11 +15,11 @@ MonoBehaviour:
   data:
     RocksContainer:
       Title: Rock
-      _value: 2
+      _value: 50000
       _clampRange: {x: 0, y: 2147483647}
     MoneyContainer:
       Title: Money
-      _value: 0
+      _value: 50000
       _clampRange: {x: 0, y: 2147483647}
     TetraObjectDatas:
     - ID: rockUp

@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if UNITY_EDITOR
+using System;
 using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
@@ -137,3 +138,4 @@ public class TetraBehaviourEditor : Editor
         return list.ToArray();
     }
 }
+#endif
